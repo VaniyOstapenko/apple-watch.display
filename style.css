@@ -1,0 +1,34 @@
+* {
+  width: 600px;
+  height: 700px;
+  margin: auto;
+  font-family: "K2D";
+  font-style: normal;
+}
+
+body {
+  background: #ffffff;
+}
+body .container {
+  border-radius: 50px;
+  border: 10px solid #828282;
+  background: #222;
+}
+body .container .watch {
+  color: #fff;
+  font: 400 30px "K2D";
+  margin: 56px 0 0 442px;
+}
+body .container .img {
+  background-image: url(./assests/Mask\ group.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 472px;
+  height: 472px;
+  margin: 5px 0 0 54px;
+}
+body .container .year {
+  color: #fff;
+  font: 400 20px "K2D";
+  margin: 16px 0 0 230px;
+}
