@@ -7,8 +7,7 @@ function doTime(dynamicTime) {
     dynamicTime.innerHTML = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
 }
 
-setTimeout(doTime, 0, dynamicTime);
-setInterval(doTime, 1000, dynamicTime);
+setInterval(doTime, 0, dynamicTime);
 
 const dynamicDate = document.querySelector('.container .year');
 
