@@ -1,19 +1,21 @@
+class AppleWatch {
+    constructor() {
+        setInterval(this.doTime, 0, this.dynamicTime);
+        setInterval(this.doDate, 0, this.dynamicDate);
+    }
+    dynamicTime = document.querySelector('.container .watch');
 
+    doTime(dynamicTime) {
+        const time = new Date();
+        dynamicTime.innerHTML = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
+    }
 
-const dynamicTime = document.querySelector('.container .watch');
+    dynamicDate = document.querySelector('.container .year');
 
-function doTime(dynamicTime) {
-    const time = new Date();
-    dynamicTime.innerHTML = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
+    doDate(dynamicDate) {
+        const date = new Date();
+        dynamicDate.innerHTML = date.toDateString();
+    }
 }
 
-setInterval(doTime, 0, dynamicTime);
-
-const dynamicDate = document.querySelector('.container .year');
-
-function doDate(dynamicDate) {
-    const date = new Date();
-    dynamicDate.innerHTML = date.toDateString();
-}
-
-setInterval(doDate, 0, dynamicDate);
+const appleWatch = new AppleWatch();
